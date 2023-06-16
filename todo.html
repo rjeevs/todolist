@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list app</title>
+    <link href="./todo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="task-input">
+            <i class="fa-solid fa-clipboard-list" style="color: #777c85;font-size: 20px;"></i>
+            <input type="text" placeholder="Add Todo" required>
+        </div>
+        <div class="controls">
+            <div class="filter">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box">
+            <li class="task">
+                <label for="1">
+                    <input type="checkbox" id="1">
+                    <p>Go to the gym</p>
+                </label>
+                <div class="setting">
+                    <i class="fa-solid fa-ellipsis" style="color: #101111;"></i>
+                    <ul class="task-menu">
+                        <li><i class="fa-solid fa-pen-to-square" style="color: #29292b;"></i>Edit</li>
+                        <li><i class="fa-solid fa-trash" style="color: #2d2e30;"></i>Delete</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="task">
+                <label for="1">
+                    <input type="checkbox" id="1">
+                    <p>Go to the gym for build my muscle</p>
+                </label>
+                <div class="setting">
+                    <i class="fa-solid fa-ellipsis" style="color: #0b0c0c;"></i>
+                </div>
+            </li>
+            <li class="task">
+                <label for="1">
+                    <input type="checkbox" id="1">
+                    <p>Go to the gym</p>
+                </label>
+                <div class="setting">
+                    <i class="fa-solid fa-ellipsis" style="color: #0d0d0e;"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+</html>
